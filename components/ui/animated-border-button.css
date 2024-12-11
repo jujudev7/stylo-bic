@@ -1,0 +1,32 @@
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-border-wrapper {
+  position: relative;
+  padding: 2px;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    45deg,
+    #ffd700,
+    #ffa500,
+    #ff8c00,
+    #daa520,
+    #ffd700
+  );
+  background-size: 200% 200%;
+  animation: borderAnimation 4s ease infinite;
+}
+
+.animated-border {
+  border-radius: 0.375rem !important;
+  width: 100%;
+}

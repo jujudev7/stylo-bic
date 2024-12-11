@@ -2,10 +2,13 @@
 
 import { FeatureCard } from "@/components/feature-card";
 import { TestimonialCard } from "@/components/testimonial-card";
+import { AnimatedBorderButton } from "@/components/ui/animated-border-button";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import imgTrouBouchon from "../public/trou-bouchon.jpg";
+import imgTrouEncre from "../public/trou-encre.jpg";
 
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -29,20 +32,23 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
           <div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-bold text-white mb-6"
+              className="text-7xl font-rochester text-white mb-12"
             >
-              L&apos;Excellence à l&apos;État Pur
+              Stylo <span className="font-sans font-light">BIC</span> Cristal
             </motion.h1>
+            <h2 className="text-6xl font-bold text-yellow-400 mb-6">
+              L&apos;Excellence à l&apos;État Pur
+            </h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto"
+              className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
             >
               {" "}
               Découvrez notre stylo d&apos;exception !<br /> Quand
@@ -54,7 +60,8 @@ export default function Home() {
               alt="stylo Biq cristal"
               width={1100}
               height={200}
-              className="rounded-full my-20"
+              className="rounded-full my-16"
+              priority
             />
 
             <div className="flex justify-center gap-4 mt-10">
@@ -64,13 +71,7 @@ export default function Home() {
               >
                 En savoir plus
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="text-white border-white bg-slate-700 hover:bg-black hover:text-white"
-              >
-                Commander Maintenant
-              </Button>
+              <AnimatedBorderButton>Commander Maintenant</AnimatedBorderButton>
             </div>
           </div>
         </div>
@@ -102,8 +103,75 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section Trous */}
+      <section className="trous flex flex-col items-center text-center py-24">
+        <h2 className="text-4xl font-bold mb-16">
+          2 trous qui changent tout !
+        </h2>
+        <div className="flex flex-row mx-auto gap-4 mb-16">
+          <Image
+            src={imgTrouBouchon}
+            alt="trou bouchon"
+            className="rounded-xl"
+          />
+          <Image src={imgTrouEncre} alt="trou encre" className="rounded-xl" />
+        </div>
+        <h3 className="text-4xl font-bold mb-8">
+          Un capuchon qui sauve des vies !
+        </h3>
+        <p className="text-lg w-3/5 mb-6">
+          Aviez-vous déjà remarqué le trou situé à l’extrémité du capuchon d’un
+          stylo BIC ?<br />
+          Pourtant, peu de gens connaissent sa réelle utilité. Ce trou a une
+          fonction bien précise, salvatrice...
+        </p>
+        <p className="text-lg w-3/5 mb-6">
+          En effet, cette simple perforation peut sauver des vies ! Oui, oui.
+          Que celui qui n’a jamais machouillé le bout de son stylo me jete la
+          première pierre… Malheureusement, il arrive pardois que certaines
+          personnes avalent accidentellement le bouchon. C’est là qu’entre en
+          jeu le fameux trou.
+        </p>
+        <p className="text-lg w-3/5 mb-6">
+          Ce dernier permet en effet de ne pas obstruer totalement les voies
+          respiratoires et assure le passage d’air dans la trachée en attendant
+          l’arrivée de secours. Une idée simple, mais qui fait toute la
+          différence !
+        </p>
+        <p className="text-lg w-3/5 mb-6">
+          Par ailleurs, ce trou évite également une pression excessive dans le
+          capuchon. Ce qui facilite son retrait en éliminant un &quot;effet
+          ventouse&quot;. Ingénieux, non ?{" "}
+        </p>
+
+        <h3 className="text-4xl font-bold my-8">Jamais en panne sèche !</h3>
+
+        <iframe
+          width="854"
+          height="480"
+          src="https://www.youtube.com/embed/s8mlXnRK9Ow?rel=0&modestbranding=1"
+          title="Petit trou stylo Bic, Jamy explique son utilité"
+          frameborder="0"
+          allowfullscreen
+          className="rounded-xl mb-8"
+        ></iframe>
+
+        <p className="text-lg w-3/5 mb-6">
+          À peu près au niveau du milieu du corps de stylo, un autre petit trou
+          existe.
+          <br />
+          Il est indispensable pour son bon fonctionnement.
+        </p>
+        <p className="text-lg w-3/5 mb-6">
+          Grâce à l’air qui passe dans ce petit trou, la pression est la même à
+          l’intérieur comme à l’extérieur du stylo. Ceci permet ainsi à l’encre
+          d’arriver jusqu’à la pointe lors de l’utilisation, tout en évitant les
+          fuites.
+        </p>
+      </section>
+
       {/* Section Témoignages */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-16">
             Ce qu&apos;en Disent Nos Clients
@@ -112,46 +180,46 @@ export default function Home() {
             <TestimonialCard
               name="Léna Situations"
               role="Entrepreneuse"
-              content="Ce stylo est devenu mon compagnon d'écriture quotidien. La qualité est exceptionnelle."
+              content="Ce stylo est devenu mon compagnon d’écriture quotidien. La qualité est exceptionnelle."
               image="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
             />
             <TestimonialCard
               name="Philippe Starck"
               role="Designer"
-              content="Le design est tout simplement magnifique. C'est un véritable objet d'art."
+              content="Le design est tout simplement magnifique. C’est un véritable objet d’art."
               image="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
             />
             <TestimonialCard
               name="Emmanuel Macron"
               role="Président"
-              content="La fluidité de l'écriture est incomparable. Un investissement qui en vaut la peine."
+              content="La fluidité de l’écriture est incomparable. Un investissement qui en vaut la peine."
               image="https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
             />
 
             <TestimonialCard
               name="Stephen King"
               role="Écrivain"
-              content="L'acte d'écrire peut ouvrir tant de portes, comme si un stylo n'était pas vraiment une plume mais une étrange variété de passe-partout."
+              content="L’acte d’écrire peut ouvrir tant de portes, comme si un stylo n’était pas vraiment une plume mais une étrange variété de passe-partout."
               image="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
             />
 
             <TestimonialCard
               name="Quentin Tarantino"
               role="Réalisateur"
-              content="Pour être romancier, il me suffit d'un stylo et d'une feuille de papier."
+              content="Pour être romancier, il me suffit d’un stylo et d’une feuille de papier."
               image="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
             />
 
             <TestimonialCard
               name="Mary Higgins Clark"
               role="Écrivaine"
-              content="Le jour de ma mort, je voudrais que l'on dépose dans mon cercueil un cahier à spirale, un stylo et une bouteille de vin. Je serai ainsi équipée pour écrire depuis l'au-delà."
+              content="Le jour de ma mort, je voudrais que l’on dépose dans mon cercueil un cahier à spirale, un stylo et une bouteille de vin. Je serai ainsi équipée pour écrire depuis l’au-delà."
               image="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
             />
             <TestimonialCard
               name="Leïla Slimani"
               role="Écrivaine"
-              content="Tous les dictateurs arabes le savent bien: en éduquant les hommes, on prend le risque qu'ils vous renversent. Et qu'ils défilent un jour, un stylo à la main."
+              content="Tous les dictateurs arabes le savent bien: en éduquant les hommes, on prend le risque qu’ils vous renversent. Et qu’ils défilent un jour, un stylo à la main."
               image="https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
             />
 
@@ -191,11 +259,11 @@ export default function Home() {
           </h2>
           <p className="text-xl mb-12 text-gray-300">
             Commandez dès maintenant et rejoignez l&apos;élite de
-            l&apos;écriture
+            l&apos;écriture !
           </p>
           <Button
             size="lg"
-            className="bg-white text-gray-900 hover:bg-gray-100"
+            className="bg-white text-lg text-gray-900 hover:bg-gray-100 py-8"
           >
             Commander pour 99€
           </Button>
