@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import imgDessin1 from "../public/dessin-bic-1.jpg";
+import imgDessin2 from "../public/dessin-bic-2.jpg";
+import imgDessin3 from "../public/dessin-bic-3.jpg";
 import imgTrouBouchon from "../public/trou-bouchon.jpg";
 import imgTrouEncre from "../public/trou-encre.jpg";
 
@@ -116,9 +119,9 @@ export default function Home() {
           />
           <Image src={imgTrouEncre} alt="trou encre" className="rounded-xl" />
         </div>
-        <h3 className="text-4xl font-bold mb-8">
+        <h4 className="text-4xl font-bold mb-8">
           Un capuchon qui sauve des vies !
-        </h3>
+        </h4>
         <p className="text-lg w-3/5 mb-6">
           Aviez-vous déjà remarqué le trou situé à l’extrémité du capuchon d’un
           stylo BIC ?<br />
@@ -144,7 +147,7 @@ export default function Home() {
           ventouse&quot;. Ingénieux, non ?{" "}
         </p>
 
-        <h3 className="text-4xl font-bold my-8">Jamais en panne sèche !</h3>
+        <h4 className="text-4xl font-bold my-8">Jamais en panne sèche !</h4>
 
         <iframe
           width="854"
@@ -171,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* Section Témoignages */}
-      <section className="py-24 bg-gray-100">
+      <section className="pt-24 pb-48 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-16">
             Ce qu&apos;en Disent Nos Clients
@@ -246,6 +249,32 @@ export default function Home() {
               role="Chanteur / Réalisateur"
               content="Laisse moi mon stylo, y’a pas moyen que je m’arrête ; j’ai une envie d’écrire comme t’as une envie de cigarette."
               image="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Section ART */}
+      <section className="relative -mt-14 py-24 rounded-t-[60px] bg-blue-900 text-white overflow-hidden z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold mb-16">
+            Objet d&apos;Art et Source de Créativité
+          </h2>
+          <div className="flex flex-wrap gap-8 justify-center mb-10">
+            <Image
+              src={imgDessin1}
+              alt="dessin au stylo Bic"
+              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px]"
+            />
+            <Image
+              src={imgDessin2}
+              alt="dessin au stylo Bic"
+              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px]"
+            />
+            <Image
+              src={imgDessin3}
+              alt="dessin au stylo Bic"
+              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px]"
             />
           </div>
         </div>
