@@ -19,15 +19,15 @@ export function TestimonialCard({
   return (
     <motion.div
       whileHover={{ y: -5 }}
-      className="p-6 bg-white rounded-xl shadow-lg"
+      className="p-5 bg-white rounded-xl border-4 border-transparent hover:border-yellow-400"
     >
       <div className="flex items-center mb-4">
-        <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
+        <div className="relative w-24 h-24 rounded-full overflow-hidden mr-4 hover:scale-110">
           <Image src={image} alt={name} fill className="object-cover" />
         </div>
         <div>
-          <h4 className="font-semibold">{name}</h4>
-          <p className="text-gray-600 text-sm">{role}</p>
+          <h4 className="font-semibold text-lg">{name}</h4>
+          <p className="text-gray-600">{role}</p>
         </div>
       </div>
       <div className="text-gray-700 italic">
