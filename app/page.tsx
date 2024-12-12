@@ -88,18 +88,18 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard
-              title="Bille en Or 18 Carats"
-              description="Une écriture fluide et précise grâce à notre plume artisanale"
+              title="La Solidité d'un Diamant"
+              description="Robustesse et précision grâce à nos billes ultra-solides et parfaitement sphériques."
+              icon="Gem"
+            />
+            <FeatureCard
+              title="Un Design Intemporel"
+              description="Un objet qui traverse les époques, mêlant artisanat, tradition et modernité."
               icon="Feather"
             />
             <FeatureCard
-              title="Design Intemporel"
-              description="Un équilibre parfait entre tradition et modernité"
-              icon="Palette"
-            />
-            <FeatureCard
-              title="Équilibre Parfait"
-              description="Conçu pour une prise en main naturelle et confortable"
+              title="L'Équilibre Parfait"
+              description="Une écriture fluide et précise grâce à une prise en main naturelle et confortable."
               icon="Scale"
             />
           </div>
@@ -108,19 +108,23 @@ export default function Home() {
 
       {/* Section Trous */}
       <section className="trous flex flex-col items-center text-center py-24">
-        <h2 className="text-4xl font-bold mb-16">
+        <h2 className="text-5xl text-blue-800 font-bold mb-16">
           2 trous qui changent tout !
         </h2>
-        <div className="flex flex-row mx-auto gap-4 mb-16">
+        <div className="flex flex-row mx-auto gap-6 mb-16">
           <Image
             src={imgTrouBouchon}
             alt="trou bouchon"
-            className="rounded-xl"
+            className="rounded-xl drop-shadow-lg hover:drop-shadow-xl"
           />
-          <Image src={imgTrouEncre} alt="trou encre" className="rounded-xl" />
+          <Image
+            src={imgTrouEncre}
+            alt="trou encre"
+            className="rounded-xl drop-shadow-lg hover:drop-shadow-xl"
+          />
         </div>
         <h4 className="text-4xl font-bold mb-8">
-          Un capuchon qui sauve des vies !
+          Un capuchon qui sauve des vies
         </h4>
         <p className="text-lg w-3/5 mb-6">
           Aviez-vous déjà remarqué le trou situé à l’extrémité du capuchon d’un
@@ -147,7 +151,7 @@ export default function Home() {
           ventouse&quot;. Ingénieux, non ?{" "}
         </p>
 
-        <h4 className="text-4xl font-bold my-8">Jamais en panne sèche !</h4>
+        <h4 className="text-4xl font-bold my-8">Jamais en panne sèche</h4>
 
         <iframe
           width="854"
@@ -183,13 +187,13 @@ export default function Home() {
             <TestimonialCard
               name="Léna Situations"
               role="Entrepreneuse"
-              content="Ce stylo est devenu mon compagnon d’écriture quotidien. La qualité est exceptionnelle."
+              content="Ce stylo est devenu mon compagnon d’écriture quotidien. La qualité est exceptionnelle !"
               image="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
             />
             <TestimonialCard
               name="Philippe Starck"
               role="Designer"
-              content="Le design est tout simplement magnifique. C’est un véritable objet d’art."
+              content="Le design est juste magnifique ! C’est un véritable objet d’art."
               image="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
             />
             <TestimonialCard

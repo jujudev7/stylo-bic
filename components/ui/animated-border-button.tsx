@@ -38,7 +38,7 @@ export function AnimatedBorderButton({
       <Button
         size="lg"
         className={cn(
-          "relative bg-indigo-600 text-white border-2 border-blue-950 hover:bg-black hover:border-amber-400/50 transition-colors",
+          "relative  text-white border-2 border-blue-950 bg-slate-950 hover:bg-indigo-600 hover:border-amber-400/50 transition-colors",
           className
         )}
       >
