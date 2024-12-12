@@ -299,12 +299,9 @@ export default function Home() {
             Commandez dès maintenant et rejoignez l&apos;élite de
             l&apos;écriture !
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-lg text-gray-900 hover:bg-gray-100 py-8"
-          >
+          <AnimatedBorderButton className="text-lg rounded-2xl hover:text-yellow-400 bg-indigo-700 hover:bg-slate-900 py-8">
             Commander pour 99€
-          </Button>
+          </AnimatedBorderButton>
         </div>
       </section>
     </main>

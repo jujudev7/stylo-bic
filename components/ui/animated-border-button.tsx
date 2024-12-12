@@ -14,10 +14,10 @@ export function AnimatedBorderButton({
   className,
 }: AnimatedBorderButtonProps) {
   return (
-    <div className="relative">
+    <div className="relative inline-block">
       {/* Gradient animé */}
       <motion.div
-        className="absolute -inset-[2px] rounded-lg bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-75"
+        className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-75"
         animate={{
           background: [
             "linear-gradient(90deg, transparent 0%, #fbbf24 50%, transparent 100%)",
@@ -33,12 +33,11 @@ export function AnimatedBorderButton({
           ease: "linear",
         }}
       />
-
       {/* Bouton avec fond sombre */}
       <Button
         size="lg"
         className={cn(
-          "relative  text-white border-2 border-blue-950 bg-slate-950 hover:bg-indigo-600 hover:border-amber-400/50 transition-colors",
+          "relative text-white border-4 border-blue-950 bg-slate-950 hover:bg-indigo-600 hover:border-amber-400/50 transition-colors",
           className
         )}
       >
