@@ -6,7 +6,7 @@ import { AnimatedBorderButton } from "@/components/ui/animated-border-button";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+import schema from "../public/bic-cristal-schema.jpg";
 import imgDessin1 from "../public/dessin-bic-1.jpg";
 import imgDessin2 from "../public/dessin-bic-2.jpg";
 import imgDessin3 from "../public/dessin-bic-3.jpg";
@@ -14,8 +14,6 @@ import imgTrouBouchon from "../public/trou-bouchon.jpg";
 import imgTrouEncre from "../public/trou-encre.jpg";
 
 export default function Home() {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
-
   return (
     <main className="relative">
       {/* Hero Section avec animation de lueur */}
@@ -47,16 +45,15 @@ export default function Home() {
             <h2 className="text-6xl font-bold text-yellow-400 mb-6">
               L&apos;Excellence à l&apos;État Pur
             </h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
-            >
-              {" "}
-              Découvrez notre stylo d&apos;exception !<br /> Quand
-              l&apos;artisanat traditionnel rencontre l&apos;innovation moderne.
-            </motion.p>
+            <p className="text-gray-100 text-lg leading-8">
+              Découvrez notre stylo d&apos;exception
+              <span className="px-2 py-1 rounded bg-yellow-400 font-bold text-blue-900 ml-1 mb-2">
+                édition limitée !
+              </span>{" "}
+              <br />
+              Quand l&apos;artisanat traditionnel rencontre l&apos;innovation
+              moderne.
+            </p>
 
             <Image
               src="/cristal.gif"
@@ -81,7 +78,7 @@ export default function Home() {
       </div>
 
       {/* Section Caractéristiques */}
-      <section className="pt-24 pb-36 bg-blue-100">
+      <section className="pt-24 pb-36 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-16">
             Caractéristiques Exceptionnelles
@@ -103,11 +100,12 @@ export default function Home() {
               icon="Scale"
             />
           </div>
+          <Image src={schema} alt="schema BIC Cristal" className="mt-16" />
         </div>
       </section>
 
       {/* Section Trous */}
-      <section className="trous flex flex-col items-center text-center py-24">
+      <section className="trous bg-blue-50 flex flex-col items-center text-center py-24">
         <h2 className="text-5xl text-blue-800 font-bold mb-16">
           2 trous qui changent tout !
         </h2>
@@ -175,6 +173,12 @@ export default function Home() {
           d’arriver jusqu’à la pointe lors de l’utilisation, tout en évitant les
           fuites.
         </p>
+        <Button
+          size="lg"
+          className="text-lg text-white rounded-xl bg-indigo-500 hover:bg-blue-900 border-2 border-yellow-400 py-8 my-8"
+        >
+          Vous êtes à un clic de signer votre meilleur achat 🖋️
+        </Button>
       </section>
 
       {/* Section Témoignages */}
@@ -288,7 +292,7 @@ export default function Home() {
       {/* Section CTA */}
       <section className="py-24 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-8">
+          <h2 className="text-4xl text-yellow-400 font-bold mb-8">
             Prêt à Découvrir l&apos;Excellence ?
           </h2>
           <p className="text-xl mb-12 text-gray-300">
