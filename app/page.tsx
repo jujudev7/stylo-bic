@@ -79,6 +79,11 @@ export default function Home() {
         </div>
       </div>
 
+      <video autoPlay loop muted className="w-full">
+        <source src="/videos/bic-story.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+
       {/* Section Caractéristiques */}
       <section className="pt-24 pb-36 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -103,6 +108,19 @@ export default function Home() {
             />
           </div>
           <Image src={schema} alt="schema BIC Cristal" className="mt-16" />
+          <h3 className="text-4xl my-12 text-center font-bold">
+            Les Secrets de Fabrication
+          </h3>
+          <iframe
+            width="854"
+            height="480"
+            src="https://www.youtube.com/embed/AjK-uX2KHSw?si=lhA3EexM5Lkcgk3V&amp;controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0"
+            title="BIC, Secrets de Fabrication de stylo à bille Cristal"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            frameBorder="0"
+            className="mx-auto rounded-xl my-8"
+          ></iframe>
         </div>
       </section>
 
@@ -158,8 +176,8 @@ export default function Home() {
           height="480"
           src="https://www.youtube.com/embed/s8mlXnRK9Ow?rel=0&modestbranding=1"
           title="Petit trou stylo Bic, Jamy explique son utilité"
-          frameborder="0"
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
           className="rounded-xl mb-8"
         ></iframe>
 
@@ -281,17 +299,17 @@ export default function Home() {
             <Image
               src={imgDessin1}
               alt="dessin au stylo Bic"
-              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px]"
+              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px] hover:scale-110 transition-transform duration-300"
             />
             <Image
               src={imgDessin2}
               alt="dessin au stylo Bic"
-              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px]"
+              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px] hover:scale-110 transition-transform duration-300"
             />
             <Image
               src={imgDessin3}
               alt="dessin au stylo Bic"
-              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px]"
+              className="rounded-xl border-2 border-white w-full md:w-1/3 h-auto max-w-[300px] hover:scale-110 transition-transform duration-300"
             />
           </div>
         </div>
@@ -309,7 +327,7 @@ export default function Home() {
               />
               <Image
                 src={StyloBic}
-                className="absolute w-[100px] rotate-[33deg]"
+                className="absolute w-[120px] rotate-[33deg]"
                 alt="stylo BIC"
               />
             </div>
