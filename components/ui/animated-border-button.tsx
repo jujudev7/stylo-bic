@@ -17,7 +17,7 @@ export function AnimatedBorderButton({
     <div className="relative inline-block">
       {/* Gradient animé */}
       <motion.div
-        className="absolute -inset-[1px] rounded-lg bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-75"
+        className="absolute -inset-[2px] rounded-lg bg-gradient-to-r from-transparent via-amber-400 to-transparent opacity-75"
         animate={{
           background: [
             "linear-gradient(90deg, transparent 0%, #fbbf24 50%, transparent 100%)",
