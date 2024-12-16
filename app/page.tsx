@@ -49,7 +49,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-100 text-lg leading-8">
               Découvrez notre stylo d&apos;exception
-              <span className="px-2 py-1 rounded bg-yellow-400 font-bold text-blue-900 ml-1 mb-2">
+              <span className="px-2 py-1 rounded bg-yellow-400 font-bold text-slate-950 ml-1 mb-2">
                 édition limitée !
               </span>{" "}
               <br />
@@ -125,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* Section Trous */}
-      <section className="trous bg-blue-50 flex flex-col items-center text-center py-24">
+      <section className="trous -mt-10 rounded-t-[100px] bg-blue-50 flex flex-col items-center text-center pt-24 pb-48">
         <h2 className="text-5xl text-blue-800 font-bold mb-16">
           2 trous qui changent tout !
         </h2>
@@ -202,7 +202,7 @@ export default function Home() {
       </section>
 
       {/* Section Témoignages */}
-      <section className="pt-24 pb-48 bg-gray-800">
+      <section className="relative -mt-20 pt-24 pb-72 rounded-t-[100px] bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl text-yellow-400 font-bold text-center mb-16">
             Ce qu&apos;en Disent Nos Clients
@@ -290,7 +290,7 @@ export default function Home() {
       </section>
 
       {/* Section ART */}
-      <section className="relative -mt-14 py-24 rounded-t-[60px] bg-blue-900 text-white overflow-hidden z-10">
+      <section className="relative -mt-24 py-24 rounded-t-[100px] bg-blue-900 text-white overflow-hidden z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-16">
             Objet d&apos;Art et Source de Créativité
@@ -340,7 +340,7 @@ export default function Home() {
                 l&apos;écriture !
               </p>
               <AnimatedBorderButton className="text-lg rounded-2xl hover:text-yellow-400 bg-indigo-700 hover:bg-slate-950 py-8">
-                Commander pour 99€
+                Commander LE stylo
               </AnimatedBorderButton>
             </div>
           </div>
