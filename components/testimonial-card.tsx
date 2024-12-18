@@ -19,7 +19,7 @@ export function TestimonialCard({
   return (
     <motion.div
       whileHover={{ y: -5 }}
-      className="p-5 bg-white rounded-xl border-4 border-transparent hover:border-yellow-400"
+      className="p-5 bg-white rounded-xl border-4 border-transparent hover:border-yellow-400 h-full flex flex-col"
     >
       <div className="flex items-center mb-4">
         <div className="relative w-24 h-24 rounded-full overflow-hidden mr-4 hover:scale-110">
@@ -30,9 +30,9 @@ export function TestimonialCard({
           <p className="text-gray-600">{role}</p>
         </div>
       </div>
-      <div className="text-gray-700 italic">
+      <div className="text-gray-700 italic flex-grow">
         {/* Contenu citation avec icônes */}
-        <p className="flex items-start">
+        <p className="flex items-start min-h-[6rem]">
           {/* Quote Open Icon */}
           <Image
             src={"/icons/quote-open.svg"}
@@ -57,4 +57,3 @@ export function TestimonialCard({
     </motion.div>
   );
 }
-
