@@ -28,14 +28,14 @@ export function ArtSection({
               className="rounded-xl border-2 border-white max-w-full h-auto hover:scale-110 transition-transform duration-300"
             />
           </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.2}>
+          <FadeInWhenVisible delay={0.4}>
             <Image
               src={imgDessin2}
               alt="dessin au stylo Bic"
               className="rounded-xl border-2 border-white max-w-full h-auto hover:scale-110 transition-transform duration-300"
             />
           </FadeInWhenVisible>
-          <FadeInWhenVisible delay={0.4}>
+          <FadeInWhenVisible delay={0.8}>
             <Image
               src={imgDessin3}
               alt="dessin au stylo Bic"
