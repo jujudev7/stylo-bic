@@ -45,16 +45,16 @@ export function FeaturesSection({ schema }: FeaturesSectionProps) {
           Les Secrets de Fabrication
         </h3>
 
-        <iframe
-          width="854"
-          height="480"
-          src="https://www.youtube.com/embed/AjK-uX2KHSw?"
-          title="BIC, Secrets de Fabrication de stylo à bille Cristal"
-          allow="autoplay; encrypted-media; fullscreen"
-          allowFullScreen
-          frameBorder="0"
-          className="mx-auto rounded-xl my-8 hover:drop-shadow-2xl"
-        ></iframe>
+        <div className="relative pt-[56.25%] w-full overflow-hidden rounded-xl my-8 hover:drop-shadow-2xl">
+          <iframe
+            src="https://www.youtube.com/embed/AjK-uX2KHSw?"
+            title="Petit trou Bic, Jamy nous explique tout"
+            allow="autoplay; encrypted-media; fullscreen"
+            allowFullScreen
+            frameBorder="0"
+            className="absolute top-0 left-0 w-full h-full"
+          ></iframe>
+        </div>
       </div>
     </section>
   );
