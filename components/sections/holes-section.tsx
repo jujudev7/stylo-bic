@@ -14,9 +14,9 @@ export function HolesSection({
   imgTrouEncre,
 }: HolesSectionProps) {
   return (
-    <section className="trous -mt-10 rounded-t-[100px] bg-blue-50 flex flex-col items-center text-center pt-24 pb-48">
+    <section className="trous xl:-mt-10 -mt-4 xl:rounded-t-[100px] rounded-t-[50px] bg-blue-50 flex flex-col items-center text-center xl-pt-24 pt-12 xl:pb-48 pb-24">
       <div className="mx-4">
-        <h2 className="text-5xl text-blue-800 font-bold mb-16">
+        <h2 className="xl:text-5xl text-4xl text-blue-800 font-bold xl:mb-16 mb-8">
           2 trous qui changent tout !
         </h2>
         <div className="flex flex-row justify-center mx-auto gap-6 mb-16">
@@ -35,22 +35,28 @@ export function HolesSection({
             />
           </FadeInWhenVisible>
         </div>
-        <h4 className="text-4xl font-bold mb-8">
+        <h4 className="xl:text-4xl text-3xl font-bold mb-8">
           Un capuchon qui sauve des vies
         </h4>
-        <p className="text-lg mx-auto w-3/5 mb-6">
+        <p className="text-lg mx-auto xl:w-3/5 w-4/5 mb-6">
           Aviez-vous déjà remarqué le trou situé à l&apos;extrémité du capuchon
           d&apos;un stylo BIC ?
-          <br />
+        </p>
+
+        <p className="text-lg mx-auto xl:w-3/5 w-4/5 mb-6">
           Pourtant, peu de gens connaissent sa réelle utilité. Ce trou a une
           fonction bien précise, salvatrice...
         </p>
-        <p className="text-lg mx-auto w-3/5 mb-6">
+        <p className="text-lg mx-auto xl:w-3/5 w-4/5 mb-6">
           En effet, cette simple perforation peut sauver des vies ! Oui, oui.
-          Que celui qui n&apos;a jamais machouillé le bout de son stylo me jete
-          la première pierre… Malheureusement, il arrive parfois que certaines
-          personnes avalent accidentellement le bouchon. C&apos;est là
-          qu&apos;entre en jeu le fameux trou.
+          Que celui qui n&apos;a jamais mâchouillé le bout de son stylo me jette
+          la première pierre…
+        </p>
+
+        <p className="text-lg mx-auto xl:w-3/5 w-4/5 mb-6">
+          Malheureusement, il arrive parfois que certaines personnes avalent
+          accidentellement le bouchon. C&apos;est là qu&apos;entre en jeu le
+          fameux trou.
         </p>
         <div className="relative w-full sm:w-3/4 max-w-4xl aspect-video overflow-hidden rounded-xl my-8 hover:drop-shadow-2xl mx-auto">
           <iframe
@@ -63,8 +69,8 @@ export function HolesSection({
           ></iframe>
         </div>
         <Button
-          size="lg"
-          className="text-lg text-white rounded-xl bg-indigo-500 hover:bg-blue-900 border-2 border-yellow-400 py-8 my-8"
+          size="xl:lg "
+          className="xl:text-lg text-white rounded-xl bg-indigo-500 hover:bg-blue-900 border-2 border-yellow-400 xl:py-8 xl:my-8 py-4 my-4 px-4"
         >
           Vous êtes à un clic de signer votre meilleur achat 🖋️
         </Button>
