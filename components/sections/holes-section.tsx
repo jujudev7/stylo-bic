@@ -14,9 +14,9 @@ export function HolesSection({
   imgTrouEncre,
 }: HolesSectionProps) {
   return (
-    <section className="trous xl:-mt-10 -mt-4 xl:rounded-t-[100px] rounded-t-[50px] bg-blue-50 flex flex-col items-center text-center xl-pt-24 pt-12 xl:pb-48 pb-24">
+    <section className="trous xl:-mt-10 -mt-4 xl:rounded-t-[100px] rounded-t-[50px] bg-blue-50 flex flex-col items-center text-center xl-pt-24 pt-12 xl:pb-48 pb-32">
       <div className="mx-4">
-        <h2 className="xl:text-5xl text-4xl text-blue-800 font-bold xl:mb-16 mb-8">
+        <h2 className="xl:text-5xl sm:text-4xl text-3xl text-blue-800 font-bold xl:mb-16 mb-8">
           2 trous qui changent tout !
         </h2>
         <div className="flex flex-row justify-center mx-auto gap-6 mb-16">

@@ -15,12 +15,12 @@ export function ArtSection({
   imgDessin3,
 }: ArtSectionProps) {
   return (
-    <section className="relative -mt-24 py-24 rounded-t-[100px] bg-blue-900 text-white overflow-hidden z-10">
+    <section className="relative -mt-24 xl:py-24 py-12 xl:rounded-t-[100px] rounded-t-[50px] bg-blue-900 text-white overflow-hidden z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl font-bold mb-16">
+        <h2 className="xl:text-4xl sm:text-3xl text-2xl font-bold md:mb-16 mb-8">
           Objet d&apos;Art et Source de Créativité
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-center mb-10">
+        <div className="grid grid-cols-3 gap-8 justify-center items-center md:mb-10 mb-6">
           <FadeInWhenVisible delay={0}>
             <Image
               src={imgDessin1}

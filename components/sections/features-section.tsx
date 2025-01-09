@@ -10,9 +10,9 @@ interface FeaturesSectionProps {
 
 export function FeaturesSection({ schema }: FeaturesSectionProps) {
   return (
-    <section className="pt-24 pb-36 bg-white">
+    <section className="xl:pt-24 pt-12 xl:pb-36 pb-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-16">
+        <h2 className="text-4xl font-bold text-center md:mb-16 mb-8">
           Caractéristiques Exceptionnelles
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -39,7 +39,11 @@ export function FeaturesSection({ schema }: FeaturesSectionProps) {
           </FadeInWhenVisible>
         </div>
         <FadeInWhenVisible>
-          <Image src={schema} alt="schema BIC Cristal" className="mt-16" />
+          <Image
+            src={schema}
+            alt="schema BIC Cristal"
+            className="md:mt-16 mt-8"
+          />
         </FadeInWhenVisible>
         <h3 className="text-4xl my-12 text-center font-bold">
           Les Secrets de Fabrication

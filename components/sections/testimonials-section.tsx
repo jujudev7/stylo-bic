@@ -89,12 +89,12 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="relative -mt-20 pt-24 pb-72 rounded-t-[100px] bg-gray-800">
+    <section className="relative -mt-20 xl:pt-24 xl:pb-72 pt-12 pb-36 xl:rounded-t-[100px] rounded-t-[50px] bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl text-yellow-400 font-bold text-center mb-16">
+        <h2 className="xl:text-4xl sm:text-3xl text-2xl text-yellow-400 font-bold text-center md:mb-16 mb-8">
           Ce qu&apos;en Disent Nos Clients
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           {testimonials.map((testimonial, index) => (
             <FadeInWhenVisible key={index} delay={Math.floor(index / 3) * 0.2}>
               <TestimonialCard {...testimonial} />
